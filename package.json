@@ -1,9 +1,11 @@
 {
-  "name": "emoji-search",
+  "name": "my-emoji-search",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
+    "prepublish": "npm run build",
     "build": "tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -15,6 +17,7 @@
   },
   "dependencies": {
     "@types/emojione": "^2.2.3",
+    "emoji-search": "^1.0.0",
     "emojione": "^4.0.0"
   }
 }
